@@ -2,11 +2,374 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://anasttasie.github.io/yappa-site/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yappa — Privacy Policy</title>
+  <meta name="description" content="Yappa's privacy policy — how we collect, use, and protect your personal data.">
+  <link rel="icon" type="image/png" href="favicon.png?v=2">
+  <link rel="apple-touch-icon" href="favicon.png?v=2">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --brand-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif;
+      --text-white: #FFFFFF;
+      --text-soft: rgba(255, 255, 255, 0.85);
+      --text-muted: rgba(255, 255, 255, 0.7);
+      --text-faint: rgba(255, 255, 255, 0.5);
+      --accent: #d0d981;
+      --cream: #F5EDE3;
+      --divider: rgba(255, 255, 255, 0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--brand-font);
+      color: var(--text-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    h1, h2, .brand {
+      font-weight: 300;
+      letter-spacing: -1.6px;
+    }
+
+    .bg-wrap {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+    }
+    .bg-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Fixed top nav */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: clamp(4px, 1vw, 8px);
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      padding: clamp(6px, 1vw, 8px) clamp(10px, 2vw, 18px);
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--text-white);
+      font-family: var(--brand-font);
+      font-size: clamp(11px, 1.8vw, 14px);
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 999px;
+      transition: background 0.2s;
+    }
+    .link-btn:hover { background: rgba(255, 255, 255, 0.3); }
+    .link-btn.active { background: rgba(255, 255, 255, 0.35); }
+
+    /* Page layout */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 108px 24px 80px;
+    }
+
+    .brand {
+      font-size: clamp(36px, 8vw, 52px);
+      color: var(--text-white);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .page-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 52px;
+      text-align: center;
+    }
+
+    /* Content */
+    .content {
+      width: 100%;
+      max-width: 680px;
+      text-align: left;
+    }
+
+    .section {
+      padding: 32px 0;
+      border-top: 1px solid var(--divider);
+    }
+    .section:first-child { border-top: none; padding-top: 0; }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      color: var(--text-white);
+      margin-bottom: 16px;
+      text-transform: lowercase;
+    }
+
+    .subsection-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-white);
+      margin-top: 20px;
+      margin-bottom: 8px;
+      letter-spacing: 0;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text-soft);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      font-size: 15px;
+      color: var(--text-soft);
+      line-height: 1.75;
+      margin-bottom: 6px;
+    }
+
+    li ul {
+      margin-top: 6px;
+      margin-bottom: 0;
+    }
+
+    strong { color: var(--text-white); font-weight: 600; }
+
+    a {
+      color: var(--text-white);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { opacity: 0.8; }
+
+    .summary-note {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--divider);
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+      width: 100%;
+      max-width: 680px;
+    }
+    .footer a {
+      color: var(--text-white);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .footer a:hover { opacity: 0.9; }
+  </style>
 </head>
 <body>
-  <p>Redirecting to <a href="https://anasttasie.github.io/yappa-site/">privacy policy</a>…</p>
-  <script>window.location.replace("https://anasttasie.github.io/yappa-site/");</script>
+  <div class="bg-wrap">
+    <img src="aura_bg_2.jpg" alt="">
+  </div>
+
+  <nav class="nav">
+    <a href="index.html" class="link-btn">home</a>
+    <a href="about.html" class="link-btn">about</a>
+    <a href="support.html" class="link-btn">support</a>
+    <a href="privacy.html" class="link-btn active">privacy policy</a>
+    <a href="https://instagram.com/yappa.life" class="link-btn" target="_blank" rel="noopener noreferrer">instagram</a>
+  </nav>
+
+  <main class="page">
+    <h1 class="brand">yappa</h1>
+    <p class="page-subtitle">privacy policy · last updated March 29, 2026</p>
+
+    <div class="content">
+
+      <!-- Intro -->
+      <div class="section">
+        <p>This Privacy Notice for Yappa Ltd ('we', 'us', or 'our') describes how and why we might access, collect, store, use, and/or share your personal information when you use our services, including when you download and use the Yappa app or engage with us in other related ways.</p>
+        <p><strong>Questions or concerns?</strong> Contact us at <a href="mailto:anastasia@yappa.life">anastasia@yappa.life</a>. If you do not agree with our policies and practices, please do not use our services.</p>
+      </div>
+
+      <!-- 1. What we collect -->
+      <div class="section">
+        <h2 class="section-title">1. what information do we collect?</h2>
+        <p class="summary-note">In short: we collect information you provide to us, information generated by your use of the app, and some technical data automatically.</p>
+
+        <h3 class="subsection-title">Information you provide</h3>
+        <ul>
+          <li><strong>Contact or authentication data</strong> — email address and name</li>
+          <li><strong>Date of birth</strong> — to verify you are 18 or older</li>
+          <li><strong>Voice recordings</strong> — audio you record within the app when creating journal entries</li>
+          <li><strong>Transcribed text</strong> — the text generated from your voice recordings by our AI transcription service</li>
+          <li><strong>Journal entry content</strong> — the AI-generated summaries, reflections, and insights derived from your recordings</li>
+          <li><strong>Usage preferences</strong> — e.g. preferred journalling time, use case selection during onboarding</li>
+        </ul>
+
+        <h3 class="subsection-title">Sensitive information</h3>
+        <p>With your consent, we process health data. Your voice recordings and the emotional content of your journal entries may reveal information about your mental health and emotional state.</p>
+
+        <h3 class="subsection-title">Device and app data</h3>
+        <ul>
+          <li><strong>Microphone access</strong> — required to record voice journal entries. We do not record audio in the background; the microphone is only used when you actively press the record button.</li>
+          <li><strong>Push notifications</strong> — if you opt in, we may send daily reminders. You can turn these off at any time in your device settings.</li>
+          <li><strong>Log and usage data</strong> — IP address, device type, OS, and information about how and when you use the app, for security and analytics purposes.</li>
+        </ul>
+      </div>
+
+      <!-- 2. How we process -->
+      <div class="section">
+        <h2 class="section-title">2. how do we process your information?</h2>
+        <p class="summary-note">In short: we process your information to provide the service, generate your AI journal insights, and keep the app running securely.</p>
+        <ul>
+          <li>To facilitate account creation and authentication.</li>
+          <li>To deliver the service — including transcribing your voice recordings and generating AI-powered reflections, summaries, and mood insights.</li>
+          <li>To process voice recordings through third-party AI services (OpenAI for transcription; Anthropic for analysis) to generate your personalised journal insights. You are asked for explicit consent to this during onboarding, before any data is transmitted.</li>
+          <li>To save or protect an individual's vital interest, such as to prevent harm.</li>
+        </ul>
+      </div>
+
+      <!-- 3. Legal bases -->
+      <div class="section">
+        <h2 class="section-title">3. what legal bases do we rely on?</h2>
+        <p class="summary-note">In short: we only process your data when we have a valid legal reason — primarily your consent.</p>
+        <p><em>If you are located in the EU or UK, this section applies to you.</em></p>
+        <ul>
+          <li><strong>Consent</strong> — we process your information with your permission. You can withdraw consent at any time.</li>
+          <li><strong>Performance of a contract</strong> — we may process your information to fulfil our contractual obligations to you.</li>
+          <li><strong>Legal obligations</strong> — we may process your information where required by law.</li>
+          <li><strong>Vital interests</strong> — we may process your information to protect your vital interests or those of a third party.</li>
+        </ul>
+      </div>
+
+      <!-- 4. Who we share with -->
+      <div class="section">
+        <h2 class="section-title">4. when and with whom do we share your information?</h2>
+        <p class="summary-note">In short: we share your data with the AI providers that power Yappa's core features, with your explicit consent.</p>
+
+        <h3 class="subsection-title">Third-party AI service providers</h3>
+        <p>To power Yappa's journalling features, we share your personal data with the following providers — and your explicit consent to this sharing is obtained during onboarding, before any data is transmitted:</p>
+        <ul>
+          <li><strong>OpenAI, Inc.</strong> (Whisper) — your voice recording (audio file) is transmitted to OpenAI's Whisper API for transcription into text. The audio is deleted from OpenAI's servers immediately after transcription. OpenAI processes this data in accordance with its <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> and provides equivalent data protection to that described here.</li>
+          <li><strong>Anthropic, PBC.</strong> (Claude) — the transcribed text from your voice recording is transmitted to Anthropic's Claude API to generate your personalised reflections, mood insights, and journal summaries. Anthropic processes this data in accordance with its <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and provides equivalent data protection to that described here.</li>
+        </ul>
+        <p>You may withdraw consent to AI processing at any time by contacting us at <a href="mailto:anastasia@yappa.life">anastasia@yappa.life</a>, though doing so will prevent the app's AI features from functioning.</p>
+
+        <h3 class="subsection-title">Business transfers</h3>
+        <p>We may share or transfer your information in connection with any merger, sale of company assets, or acquisition of all or a portion of our business.</p>
+      </div>
+
+      <!-- 5. AI products -->
+      <div class="section">
+        <h2 class="section-title">5. AI-powered features</h2>
+        <p class="summary-note">In short: Yappa uses OpenAI and Anthropic to transcribe and analyse your voice recordings.</p>
+
+        <h3 class="subsection-title">How your data flows</h3>
+        <ul>
+          <li>When you press record, your voice is captured as an audio file on your device.</li>
+          <li>That audio file is transmitted over an encrypted connection to OpenAI (Whisper) for transcription.</li>
+          <li>The audio is deleted from OpenAI's servers immediately after transcription.</li>
+          <li>The resulting transcribed text is transmitted over an encrypted connection to Anthropic (Claude) for analysis.</li>
+          <li>Only the generated summary and insights are stored by Yappa; raw transcriptions are not retained.</li>
+        </ul>
+        <p>Both OpenAI and Anthropic do not use data submitted via the API to train their models by default. For full details, see <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's Privacy Policy</a> and <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</p>
+      </div>
+
+      <!-- 6. Retention -->
+      <div class="section">
+        <h2 class="section-title">6. how long do we keep your information?</h2>
+        <p class="summary-note">In short: we keep your information for as long as necessary to provide the service.</p>
+        <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this notice, unless a longer retention period is required by law. No purpose in this notice will require us to keep your personal information for longer than twelve (12) months past the start of the idle period of your account.</p>
+        <p>Encrypted backups are kept for 12 months after your last visit, then automatically deleted.</p>
+      </div>
+
+      <!-- 7. Security -->
+      <div class="section">
+        <h2 class="section-title">7. how do we keep your information safe?</h2>
+        <p>We have implemented appropriate technical and organisational security measures designed to protect your personal information. Your journal entries are end-to-end encrypted. Audio is deleted immediately after processing. We can't read your entries — only you can. We never sell your data.</p>
+        <p>However, no electronic transmission over the internet can be guaranteed to be 100% secure. Transmission of personal information to and from our services is at your own risk.</p>
+      </div>
+
+      <!-- 8. Minors -->
+      <div class="section">
+        <h2 class="section-title">8. do we collect information from minors?</h2>
+        <p>We do not knowingly collect data from or market to children under 18 years of age. By using the services, you represent that you are at least 18. If you become aware of any data we may have collected from children under 18, please contact us at <a href="mailto:anastasia@yappa.life">anastasia@yappa.life</a>.</p>
+      </div>
+
+      <!-- 9. Your rights -->
+      <div class="section">
+        <h2 class="section-title">9. what are your privacy rights?</h2>
+        <p class="summary-note">In short: depending on where you are located, you may have certain rights over your personal information.</p>
+        <p>If you are located in the EEA, UK, or Switzerland, you have the right to: access a copy of your personal information; request rectification or erasure; restrict or object to processing; and data portability. To exercise these rights, contact us at <a href="mailto:anastasia@yappa.life">anastasia@yappa.life</a>.</p>
+        <p><strong>Withdrawing consent:</strong> you can withdraw your consent to AI data processing at any time by contacting us. This will not affect the lawfulness of processing before your withdrawal.</p>
+        <p><strong>Account deletion:</strong> you can delete all your data at any time from within the app.</p>
+      </div>
+
+      <!-- 10. DNT -->
+      <div class="section">
+        <h2 class="section-title">10. do-not-track signals</h2>
+        <p>We do not currently respond to Do-Not-Track browser signals, as no uniform standard for recognising and implementing DNT signals has been finalised.</p>
+      </div>
+
+      <!-- 11. US residents -->
+      <div class="section">
+        <h2 class="section-title">11. US residents</h2>
+        <p class="summary-note">In short: residents of certain US states have specific privacy rights under applicable state law.</p>
+        <p>If you are a resident of California, Colorado, Connecticut, or other states with applicable privacy laws, you may have the right to access, correct, delete, or obtain a copy of your personal information, and to opt out of the sale or sharing of your personal data. We do not sell or share personal information.</p>
+        <p>To exercise these rights, contact us at <a href="mailto:anastasia@yappa.life">anastasia@yappa.life</a>.</p>
+      </div>
+
+      <!-- 12. Updates -->
+      <div class="section">
+        <h2 class="section-title">12. updates to this notice</h2>
+        <p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated date at the top of this page. We encourage you to review this notice periodically.</p>
+      </div>
+
+      <!-- 13. Contact -->
+      <div class="section">
+        <h2 class="section-title">13. how to contact us</h2>
+        <p>If you have questions or comments about this notice, contact us at <a href="mailto:anastasia@yappa.life">anastasia@yappa.life</a>.</p>
+        <p>
+          Yappa Ltd<br>
+          London, E8 1FU<br>
+          United Kingdom
+        </p>
+        <p>If you are a resident in the United Kingdom, we are the data controller of your personal information. Our representative is Anastasia Evans.</p>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <p>© Yappa 2026 · <a href="mailto:anastasia@yappa.life">anastasia@yappa.life</a></p>
+    </footer>
+  </main>
 </body>
 </html>
